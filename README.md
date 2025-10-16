@@ -1,8 +1,8 @@
-# Facial Recognition Using One-Shot Learning
+# Facial Recognition Using One-shot Learning
+
 
 ## Overview
-A deep learning assignment about facial recognition using one-shot learning, based on the paper Siamese Neural Networks for One-shot Image Recognition
-This report addresses all aspects of the assignment, alongside the accompanying code files.
+A deep learning project about facial recognition using one-shot learning, based on the paper Siamese Neural Networks for One-shot Image Recognition.
 
 ## Table of Contents
 1. Data Analysis  
@@ -675,7 +675,7 @@ As the **accuracy increases and improves**, the **loss correspondingly decreases
 
 In addition, we performed a **comparison of the training runtimes** across all models. (This comparison **did not include testing runtimes**, as those were extremely short and therefore not meaningful for evaluation.)
 
-<img width="281" height="227.5" alt="image" src="https://github.com/user-attachments/assets/98a90df7-e96c-4210-a598-f6484cdfb719" />
+<img width="421.5" height="341.25" alt="image" src="https://github.com/user-attachments/assets/0778fd45-fe6f-43d8-a9a5-6c637ebd25e0" />
 
 As expected, **Models 1 and 3**, which were trained for **50 epochs**, required approximately **twice the training time** compared to **Models 2 and 4**, which were trained for **25 epochs**.
 
@@ -690,7 +690,7 @@ Therefore, we conducted additional experiments on this model to **examine the im
 
 ## **Effect of Batch Size**
 
-<img width="213.3" height="160" alt="image" src="https://github.com/user-attachments/assets/46139237-7fe2-4d56-b381-91ebf18c765f" />
+<img width="480" height="360" alt="image" src="https://github.com/user-attachments/assets/9203d7ff-f799-4642-a53c-2f1257edf421" />
 
 We fixed all other hyperparameters and varied only the **batch size**: `[8, 16, 32, 64]`.
 We initially hypothesized that **too small a batch size** would lead to **poorer performance**, as frequent weight updates based on small amounts of data might introduce excessive noise and instability.
@@ -700,7 +700,7 @@ Surprisingly, the **best performance** was achieved with a **batch size of 64**,
 
 ## **Effect of Learning Rate**
 
-<img width="213.3" height="160" alt="image" src="https://github.com/user-attachments/assets/10515146-cfbc-4a67-9943-c5bad4e699b3" />
+<img width="480" height="360" alt="image" src="https://github.com/user-attachments/assets/3b5a67a1-94cd-45c4-8876-3bc13dfdc508" />
 
 Next, we tested four different values for the **learning rate**, spanning **two orders of magnitude**: `[0.0001, 0.0005, 0.001, 0.005]`.
 From this experiment, it was observed that learning rates on the order of $10^{-2}$ produced **better results** than those on the order of $10^{-3}$.
@@ -709,7 +709,7 @@ We infer that **too small a learning rate** causes the model to take **very smal
 
 ## **Effect of the Number of Epochs**
 
-<img width="213.3" height="160" alt="image" src="https://github.com/user-attachments/assets/dd2b1c89-0e63-49ea-8da4-ff4f30ae22eb" />
+<img width="480" height="360" alt="image" src="https://github.com/user-attachments/assets/51710128-83e4-4a6e-8610-cb5c012ad9d6" />
 
 In this experiment, we examined how the **number of training epochs** affected the model’s accuracy: `[5, 15, 25, 50]`.
 We hypothesized that **increasing the number of epochs** would improve the model’s performance — and indeed, we observed better results as the number of epochs increased.
